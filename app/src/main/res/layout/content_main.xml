@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textViewNuevoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/defaultMargin"
+        android:textSize="@dimen/defautlTextSize"
+        android:textAlignment="center"
+        android:text="@string/textoTextViewNuevoNombre"/>
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/defaultMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoNombre"/>
+<RadioGroup
+    android:id="@+id/radioGroupOpcionesCurso"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/defaultMargin"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/editTextNombre">
+
+    <RadioButton
+        android:id="@+id/radioButtonOpcionPhp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opcionPhp"/>
+    <RadioButton
+        android:id="@+id/radioButtonOpcionSql"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opcionSql"/>
+    <RadioButton
+        android:id="@+id/radioButtonOpcionMySql"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opcionMySql"/>
+</RadioGroup>
+<TextView
+    android:id="@+id/textViewDescuento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/defaultMargin"
+    android:textSize="@dimen/defautlTextSize"
+    android:textAlignment="center"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/radioGroupOpcionesCurso"
+    android:text="@string/textoDescuento"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxDescuento5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/defaultMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescuento"
+        android:text="@string/textoDescuento5" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDescuento10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxDescuento5"
+        android:text="@string/textoDescuento10" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/defaultMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxDescuento10"
+        android:text="@string/textoBtnCalcular"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

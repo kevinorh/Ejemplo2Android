@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MultiplesControles</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_actividad2">actividad2</string>
+    <string name="textoTituloActividad2">Datos de Matrícula</string>
+    <string name="textoTextViewNuevoNombre">Ingrese Nombre</string>
+    <string name="opcionPhp">Php</string>
+    <string name="opcionSql">Sql</string>
+    <string name="opcionMySql">MySql</string>
+    <string name="textoDescuento">Seleccione Dscto</string>
+    <string name="textoDescuento5">Descuento 5%</string>
+    <string name="textoDescuento10">Descuento 10%</string>
+    <string name="textoBtnVolver">Volver a Principal</string>
+    <string name="textoBtnCalcular">Calcular Precio</string>
+</resources>
